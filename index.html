@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Уроки JavaScript для начинающих</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Изучаем JavaScript вместе</h1>
+        <div id="greeting-message"></div>
+        <button onclick="askUserName()">Ввести имя</button>
+
+        <h2>Что такое JavaScript?</h2>
+        <p>JavaScript — это популярный язык программирования, который добавляет интерактивность веб-страницам. Его основные применения включают:</p>
+        <ul>
+            <li>Изменение содержимого страниц без перезагрузки</li>
+            <li>Проверка данных на формах</li>
+            <li>Создание визуальных эффектов</li>
+            <li>Взаимодействие с веб-серверами (AJAX)</li>
+        </ul>
+        <p>JavaScript не подходит для:</p>
+        <ul>
+            <li>Обработки файлов на клиентской стороне</li>
+            <li>Выполнения сложных вычислений на клиенте</li>
+        </ul>
+
+        <h2>Примеры заданий</h2>
+        <a href="../Pract1/index.html"><button>Задание №1</button></a>
+        <a href="../Pract2/index.html"><button>Задание №2</button></a>
+
+        <h2>JavaScript Викторина</h2>
+        <button onclick="launchQuiz()">Начать викторину</button>
+        <div id="quiz-result"></div>
+
+        <h2>Полноэкранная заставка</h2>
+        <button onclick="displayOverlay()">Показать заставку</button>
+
+        <div id="overlay" onclick="hideOverlay()">
+            <div id="overlay-content"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
